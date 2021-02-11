@@ -2,6 +2,7 @@
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Document>
 	<name>Isle of Wight Council.kml</name>
+	<visibility>0</visibility>
 	<Style id="s_ylw-pushpin_hl">
 		<IconStyle>
 			<scale>1.3</scale>
@@ -16,6 +17,48 @@
 		<PolyStyle>
 			<color>ff00ffff</color>
 		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_blue-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_blue-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_blue-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_blue-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/blue-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff00ffff</color>
+		</LabelStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="sn_blue-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/blue-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff00ffff</color>
+		</LabelStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
 	</Style>
 	<Style id="s_ylw-pushpin">
 		<IconStyle>
@@ -44,6 +87,7 @@
 	</StyleMap>
 	<Placemark>
 		<name>Isle of Wight Council</name>
+		<visibility>0</visibility>
 		<description>This is the Isle of Wight Council</description>
 		<styleUrl>#m_ylw-pushpin</styleUrl>
 		<Polygon>
@@ -58,6 +102,24 @@
 				</LinearRing>
 			</outerBoundaryIs>
 		</Polygon>
+	</Placemark>
+	<Placemark>
+		<name>Isle of Wight Council</name>
+		<visibility>0</visibility>
+		<LookAt>
+			<longitude>-1.290809216606841</longitude>
+			<latitude>50.70092230210359</latitude>
+			<altitude>0</altitude>
+			<heading>0.0002072692266462006</heading>
+			<tilt>35.5754715434847</tilt>
+			<range>305.4673949664202</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#msn_blue-pushpin</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>-1.291044953735428,50.70100819263669,0</coordinates>
+		</Point>
 	</Placemark>
 </Document>
 </kml>
